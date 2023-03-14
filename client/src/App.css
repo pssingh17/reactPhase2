@@ -1,0 +1,9 @@
+.App {
+	text-align: center;
+}
+
+@media screen and (max-width:500px) {
+	.fav-container-child {
+		flex-direction: column;
+	}
+}
