@@ -102,13 +102,11 @@ export const Navbar = (props:any) => {
 			
 				<NavLink to="/" className="nav-link"  style={{ padding: "21px", color: "grey" }} >Home</NavLink>
 
-				{loggedIn === true || userLogin?.token ? <>
+			
 					<NavLink to="/trending" className="nav-link"  style={{ padding: "21px", color: "grey" }}>Trending</NavLink>
 					<NavLink to="/toprated" className="nav-link" style={{ padding: "21px", color: "grey" }}>Top Rated</NavLink>
 					<NavLink to="/toppicks" className="nav-link" style={{ padding: "21px", color: "grey" }}>Top Picks</NavLink>
-				</> :
-				""
-				}
+			
 				<NavLink to="advanceFilters" className="nav-link" style={{ padding: "21px", color: "grey" }}>Advance Filters</NavLink>
 
 				<button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
