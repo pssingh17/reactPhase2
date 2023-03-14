@@ -159,8 +159,9 @@ const ListingCard = (props: listingsProp) => {
 
 			<div className="card-body d-flex flex-column">
 				<h5 className="card-title">{props.listing.name.slice(0, 50)}...</h5>
-				<p>Price: $ {props.listing?.price}</p>
+			
 				{props.listing.summary ? <p className="card-text text-justify">{props.listing.summary.slice(0, 150)}...</p> : ""}
+				<b>Price: $ {props.listing?.price}</b>
 				{userLogin?.credentials?.email ? <
 					>
 					{addedToFavourites === true ? <>
